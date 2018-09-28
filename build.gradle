@@ -1,9 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.2.60'
+    ext.kotlin_version = '1.2.30'
     repositories {
         jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
         maven { url 'https://dl.google.com/dl/android/maven2/' }
         google()
     }
@@ -19,11 +21,13 @@ apply plugin: 'kotlin'
 allprojects {
     repositories {
         jcenter()
+        google()
+        mavenCentral()
         maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://jitpack.io' }
         maven { url 'https://github.com/donnfelker/mvn-repo/raw/master/' }
     }
 }
-
 
 ext {
     jenkinsBuild = project.rootProject.hasProperty("JENKINS_BUILD")
@@ -34,8 +38,9 @@ ext {
 
     supportVersion = "27.0.2"
     glideVersion = "4.0.0"
-
-
+    retrofitVersion = "2.3.0"
+    rxkotlinVersion = "2.2.0"
+    rxandroidVersion = "2.0.1"
     compileKotlin {
         kotlinOptions {
             jvmTarget = "1.8"

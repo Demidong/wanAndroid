@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mediumblue"
+        android:text="标题"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mediumvioletred"
+        android:text="2018年08月11日"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:textColor="@color/seagreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我今天加班了，应该有奖励的，必须有"
+        android:textSize="16sp"
+        />
+</LinearLayout>
